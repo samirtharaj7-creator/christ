@@ -5,19 +5,23 @@
     hermeneutics: "hermeneutics",
     psalms: "psalms",
     psalmsexplorer: "psalms",
-    daniel: "daniel",
-    revelation: "revelation",
     sanctuary: "sanctuary",
     sanctuaryexplorer: "sanctuary",
     lastdayevents: "last-day-events",
-    romans: "romans",
     parables: "parables",
+    romans: "romans",
+    corinthians: "corinthians",
+    hebrews: "hebrews",
+    isaiah: "isaiah",
+    daniel: "daniel",
+    revelation: "revelation",
+    christ: "lifeofchrist",
     lifeofchrist: "lifeofchrist",
     "life-of-christ": "lifeofchrist",
   };
   const tool = script?.dataset.tool || hostToolMap[hostTool] || "parables";
   const assetBase = window.location.protocol === "file:" ? "assets/" : "/assets/";
-  const logoSrc = `${assetBase}my-bible-explorer-logo.png`;
+  const logoSrc = `https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1`;
 
   const libraryItems = [
     {
@@ -33,21 +37,9 @@
       tool: "psalms",
     },
     {
-      name: "Daniel",
-      desc: "Prophecy and providence",
-      href: "https://daniel.mybibleexplorer.com",
-      tool: "daniel",
-    },
-    {
-      name: "Revelation",
-      desc: "Symbols, judgment, and final hope",
-      href: "https://revelation.mybibleexplorer.com/revelation/1/",
-      tool: "revelation",
-    },
-    {
       name: "Sanctuary",
       desc: "A blueprint of salvation",
-      href: "https://sanctuary.mybibleexplorer.com/#map",
+      href: "https://sanctuary.mybibleexplorer.com/#structure",
       tool: "sanctuary",
     },
     {
@@ -57,23 +49,53 @@
       tool: "last-day-events",
     },
     {
-      name: "Romans",
-      desc: "Grace, faith, and gospel life",
-      href: "https://romans.mybibleexplorer.com",
-      tool: "romans",
-    },
-    {
       name: "Parables",
       desc: "Stories of the kingdom",
       href: "https://parables.mybibleexplorer.com",
       tool: "parables",
     },
     {
-      name: "Life of Christ",
-      desc: "The Gospel story scene by scene",
-      href: "https://lifeofchrist.mybibleexplorer.com",
-      tool: "lifeofchrist",
+      name: "Romans",
+      desc: "Righteousness by faith and life in the Spirit",
+      href: "https://romans.mybibleexplorer.com",
+      tool: "romans",
     },
+    {
+      name: "Corinthians",
+      desc: "Unity, worship, holy living, and resurrection",
+      href: "https://corinthians.mybibleexplorer.com/",
+      tool: "corinthians",
+    },
+    {
+      name: "Hebrews",
+      desc: "Christ, covenant, sanctuary, and persevering faith",
+      href: "https://hebrews.mybibleexplorer.com/",
+      tool: "hebrews",
+    },
+    {
+      name: "Isaiah",
+      desc: "Judgment, comfort, and gospel hope",
+      href: "https://isaiah.mybibleexplorer.com/",
+      tool: "isaiah",
+    },
+    {
+      name: "Daniel",
+      desc: "Prophecy and providence",
+      href: "https://daniel.mybibleexplorer.com",
+      tool: "daniel",
+    },
+    {
+      name: "Revelation",
+      desc: "Symbols, judgment, and final hope",
+      href: "https://revelation.mybibleexplorer.com/",
+      tool: "revelation",
+    },
+    {
+      name: "Life of Christ",
+      desc: "The life and ministry of Jesus",
+      href: "https://christ.mybibleexplorer.com/",
+      tool: "lifeofchrist",
+    }
   ];
 
   const libraryMarkup = libraryItems.map((item) => `
@@ -87,7 +109,7 @@
       <div class="mbe-shell-wrap">
         <div class="mbe-ribbon-left">
           <a class="mbe-ribbon-brand" href="https://mybibleexplorer.com" aria-label="My Bible Explorer home">
-            <img class="mbe-ribbon-logo" src="${logoSrc}" alt="My Bible Explorer">
+            <img class="mbe-ribbon-logo" src="${logoSrc}" alt="My Bible Explorer" width="107" height="34">
           </a>
           <a class="mbe-ribbon-back" href="https://mybibleexplorer.com/#journeys">Back to Library</a>
         </div>
@@ -108,7 +130,7 @@
     <footer class="mbe-global-footer" data-tool="${tool}">
       <div class="mbe-shell-wrap mbe-footer-wrap">
         <a class="mbe-footer-brand" href="https://mybibleexplorer.com" aria-label="My Bible Explorer home">
-          <img class="mbe-footer-logo" src="${logoSrc}" alt="My Bible Explorer">
+          <img class="mbe-footer-logo" src="${logoSrc}" alt="My Bible Explorer" width="107" height="34">
         </a>
         <span>Know the Word. Live the Word.</span>
         <span>To contact, email <a class="mbe-footer-link" href="mailto:admin@mybibleexplorer.com">admin@mybibleexplorer.com</a></span>
