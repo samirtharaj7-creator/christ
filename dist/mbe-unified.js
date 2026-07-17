@@ -11,6 +11,11 @@
     parables: "parables",
     romans: "romans",
     corinthians: "corinthians",
+    galatians: "galatians",
+    ephesians: "ephesians",
+    philippians: "philippians",
+    colossians: "colossians",
+    james: "james",
     hebrews: "hebrews",
     isaiah: "isaiah",
     daniel: "daniel",
@@ -67,10 +72,40 @@
       tool: "corinthians",
     },
     {
+      name: "Galatians",
+      desc: "Freedom in Christ and life by the Spirit",
+      href: "https://galatians.mybibleexplorer.com/",
+      tool: "galatians",
+    },
+    {
+      name: "Ephesians",
+      desc: "Grace, unity, new life, and spiritual warfare",
+      href: "https://ephesians.mybibleexplorer.com/",
+      tool: "ephesians",
+    },
+    {
+      name: "Philippians",
+      desc: "Joy, humility, perseverance, and contentment",
+      href: "https://philippians.mybibleexplorer.com/",
+      tool: "philippians",
+    },
+    {
+      name: "Colossians",
+      desc: "The supremacy of Christ and life in Him",
+      href: "https://colossians.mybibleexplorer.com/",
+      tool: "colossians",
+    },
+    {
       name: "Hebrews",
       desc: "Christ, covenant, sanctuary, and persevering faith",
       href: "https://hebrews.mybibleexplorer.com/",
       tool: "hebrews",
+    },
+    {
+      name: "James",
+      desc: "Living faith, wisdom, speech, patience, and prayer",
+      href: "https://james.mybibleexplorer.com/",
+      tool: "james",
     },
     {
       name: "Isaiah",
@@ -95,7 +130,7 @@
       desc: "The life and ministry of Jesus",
       href: "https://christ.mybibleexplorer.com/",
       tool: "lifeofchrist",
-    }
+    },
   ];
 
   const libraryMarkup = libraryItems.map((item) => `
