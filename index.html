@@ -35,9 +35,10 @@
   .tn-mark { font-family: var(--serif); font-size: 18px; color: var(--ink); text-decoration: none; white-space: nowrap; }
   .tn-links { display: flex; align-items: center; justify-content: center; gap: 18px; overflow-x: auto; scrollbar-width: none; }
   .tn-links::-webkit-scrollbar { display: none; }
-  .tn-links a { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--grey); text-decoration: none; white-space: nowrap; transition: color .15s ease; }
+  .tn-links a { display: inline-flex; min-height: 24px; align-items: center; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--grey); text-decoration: none; white-space: nowrap; transition: color .15s ease; }
   .tn-links a:hover { color: var(--ink); }
   .tn-links a.is-here { color: var(--ink); }
+  .tn-links a:focus-visible { color: var(--ink); outline: 2px solid var(--ink); outline-offset: 2px; }
   .tn-search-wrap { min-width: 0; }
   .tn-search {
     width: 100%; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
