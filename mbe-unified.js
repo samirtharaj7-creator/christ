@@ -30,40 +30,10 @@
 
   const libraryItems = [
     {
-      name: "Hermeneutics",
-      desc: "Learn to read Scripture faithfully",
-      href: "https://hermeneutics.mybibleexplorer.com",
-      tool: "hermeneutics",
-    },
-    {
-      name: "Psalms",
-      desc: "Worship, lament, praise, and prayer",
-      href: "https://psalms.mybibleexplorer.com",
-      tool: "psalms",
-    },
-    {
-      name: "Sanctuary",
-      desc: "A blueprint of salvation",
-      href: "https://sanctuary.mybibleexplorer.com/#structure",
-      tool: "sanctuary",
-    },
-    {
-      name: "Last Day Events",
-      desc: "Earth's final chapter",
-      href: "https://lastdayevents.mybibleexplorer.com/index.html",
-      tool: "last-day-events",
-    },
-    {
-      name: "Parables",
-      desc: "Stories of the kingdom",
-      href: "https://parables.mybibleexplorer.com",
-      tool: "parables",
-    },
-    {
-      name: "Romans",
-      desc: "Righteousness by faith and life in the Spirit",
-      href: "https://romans.mybibleexplorer.com",
-      tool: "romans",
+      name: "Colossians",
+      desc: "The supremacy of Christ and life in Him",
+      href: "https://colossians.mybibleexplorer.com/",
+      tool: "colossians",
     },
     {
       name: "Corinthians",
@@ -72,10 +42,10 @@
       tool: "corinthians",
     },
     {
-      name: "Galatians",
-      desc: "Freedom in Christ and life by the Spirit",
-      href: "https://galatians.mybibleexplorer.com/",
-      tool: "galatians",
+      name: "Daniel",
+      desc: "Prophecy and providence",
+      href: "https://daniel.mybibleexplorer.com",
+      tool: "daniel",
     },
     {
       name: "Ephesians",
@@ -84,16 +54,10 @@
       tool: "ephesians",
     },
     {
-      name: "Philippians",
-      desc: "Joy, humility, perseverance, and contentment",
-      href: "https://philippians.mybibleexplorer.com/",
-      tool: "philippians",
-    },
-    {
-      name: "Colossians",
-      desc: "The supremacy of Christ and life in Him",
-      href: "https://colossians.mybibleexplorer.com/",
-      tool: "colossians",
+      name: "Galatians",
+      desc: "Freedom in Christ and life by the Spirit",
+      href: "https://galatians.mybibleexplorer.com/",
+      tool: "galatians",
     },
     {
       name: "Hebrews",
@@ -102,10 +66,10 @@
       tool: "hebrews",
     },
     {
-      name: "James",
-      desc: "Living faith, wisdom, speech, patience, and prayer",
-      href: "https://james.mybibleexplorer.com/",
-      tool: "james",
+      name: "Hermeneutics",
+      desc: "Learn to read Scripture faithfully",
+      href: "https://hermeneutics.mybibleexplorer.com",
+      tool: "hermeneutics",
     },
     {
       name: "Isaiah",
@@ -114,10 +78,40 @@
       tool: "isaiah",
     },
     {
-      name: "Daniel",
-      desc: "Prophecy and providence",
-      href: "https://daniel.mybibleexplorer.com",
-      tool: "daniel",
+      name: "James",
+      desc: "Living faith, wisdom, speech, patience, and prayer",
+      href: "https://james.mybibleexplorer.com/",
+      tool: "james",
+    },
+    {
+      name: "Last Day Events",
+      desc: "Earth's final chapter",
+      href: "https://lastdayevents.mybibleexplorer.com/index.html",
+      tool: "last-day-events",
+    },
+    {
+      name: "Life of Christ",
+      desc: "The life and ministry of Jesus",
+      href: "https://christ.mybibleexplorer.com/",
+      tool: "lifeofchrist",
+    },
+    {
+      name: "Parables",
+      desc: "Stories of the kingdom",
+      href: "https://parables.mybibleexplorer.com",
+      tool: "parables",
+    },
+    {
+      name: "Philippians",
+      desc: "Joy, humility, perseverance, and contentment",
+      href: "https://philippians.mybibleexplorer.com/",
+      tool: "philippians",
+    },
+    {
+      name: "Psalms",
+      desc: "Worship, lament, praise, and prayer",
+      href: "https://psalms.mybibleexplorer.com",
+      tool: "psalms",
     },
     {
       name: "Revelation",
@@ -126,17 +120,28 @@
       tool: "revelation",
     },
     {
-      name: "Life of Christ",
-      desc: "The life and ministry of Jesus",
-      href: "https://christ.mybibleexplorer.com/",
-      tool: "lifeofchrist",
+      name: "Romans",
+      desc: "Righteousness by faith and life in the Spirit",
+      href: "https://romans.mybibleexplorer.com",
+      tool: "romans",
+    },
+    {
+      name: "Salvation",
+      desc: "Righteousness by faith, justification, and assurance",
+      href: "https://salvation.mybibleexplorer.com/",
+      tool: "salvation",
+    },
+    {
+      name: "Sanctuary",
+      desc: "A blueprint of salvation",
+      href: "https://sanctuary.mybibleexplorer.com/#structure",
+      tool: "sanctuary",
     },
   ];
 
   const libraryMarkup = libraryItems.map((item) => `
             <a class="mbe-library-item" href="${item.href}"${item.tool === tool ? ' aria-current="page"' : ""}>
               <span class="mbe-library-name">${item.name}</span>
-              <span class="mbe-library-desc">${item.desc}</span>
             </a>`).join("");
 
   const headerMarkup = `
