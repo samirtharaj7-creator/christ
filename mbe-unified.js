@@ -33,116 +33,145 @@
       name: "Colossians",
       desc: "The supremacy of Christ and life in Him",
       href: "https://colossians.mybibleexplorer.com/",
+      category: "book",
       tool: "colossians",
     },
     {
       name: "Corinthians",
       desc: "Unity, worship, holy living, and resurrection",
       href: "https://corinthians.mybibleexplorer.com/",
+      category: "book",
       tool: "corinthians",
     },
     {
       name: "Daniel",
       desc: "Prophecy and providence",
       href: "https://daniel.mybibleexplorer.com",
+      category: "book",
       tool: "daniel",
     },
     {
       name: "Ephesians",
       desc: "Grace, unity, new life, and spiritual warfare",
       href: "https://ephesians.mybibleexplorer.com/",
+      category: "book",
       tool: "ephesians",
     },
     {
       name: "Galatians",
       desc: "Freedom in Christ and life by the Spirit",
       href: "https://galatians.mybibleexplorer.com/",
+      category: "book",
       tool: "galatians",
     },
     {
       name: "Hebrews",
       desc: "Christ, covenant, sanctuary, and persevering faith",
       href: "https://hebrews.mybibleexplorer.com/",
+      category: "book",
       tool: "hebrews",
     },
     {
       name: "Hermeneutics",
       desc: "Learn to read Scripture faithfully",
       href: "https://hermeneutics.mybibleexplorer.com",
+      category: "topic",
       tool: "hermeneutics",
     },
     {
       name: "Isaiah",
       desc: "Judgment, comfort, and gospel hope",
       href: "https://isaiah.mybibleexplorer.com/",
+      category: "book",
       tool: "isaiah",
     },
     {
       name: "James",
       desc: "Living faith, wisdom, speech, patience, and prayer",
       href: "https://james.mybibleexplorer.com/",
+      category: "book",
       tool: "james",
     },
     {
       name: "Last Day Events",
       desc: "Earth's final chapter",
       href: "https://lastdayevents.mybibleexplorer.com/index.html",
+      category: "topic",
       tool: "last-day-events",
     },
     {
       name: "Life of Christ",
       desc: "The life and ministry of Jesus",
       href: "https://christ.mybibleexplorer.com/",
+      category: "topic",
       tool: "lifeofchrist",
     },
     {
       name: "Parables",
       desc: "Stories of the kingdom",
       href: "https://parables.mybibleexplorer.com",
+      category: "topic",
       tool: "parables",
     },
     {
       name: "Philippians",
       desc: "Joy, humility, perseverance, and contentment",
       href: "https://philippians.mybibleexplorer.com/",
+      category: "book",
       tool: "philippians",
     },
     {
       name: "Psalms",
       desc: "Worship, lament, praise, and prayer",
       href: "https://psalms.mybibleexplorer.com",
+      category: "book",
       tool: "psalms",
     },
     {
       name: "Revelation",
       desc: "Symbols, judgment, and final hope",
       href: "https://revelation.mybibleexplorer.com/",
+      category: "book",
       tool: "revelation",
     },
     {
       name: "Romans",
       desc: "Righteousness by faith and life in the Spirit",
       href: "https://romans.mybibleexplorer.com",
+      category: "book",
       tool: "romans",
     },
     {
       name: "Salvation",
       desc: "Righteousness by faith, justification, and assurance",
       href: "https://salvation.mybibleexplorer.com/",
+      category: "topic",
       tool: "salvation",
     },
     {
       name: "Sanctuary",
       desc: "A blueprint of salvation",
       href: "https://sanctuary.mybibleexplorer.com/#structure",
+      category: "topic",
       tool: "sanctuary",
     },
   ];
 
-  const libraryMarkup = libraryItems.map((item) => `
+  const renderLibraryItems = (category) => libraryItems.filter((item) => item.category === category).map((item) => `
             <a class="mbe-library-item" href="${item.href}"${item.tool === tool ? ' aria-current="page"' : ""}>
               <span class="mbe-library-name">${item.name}</span>
             </a>`).join("");
+
+  const libraryMarkup = `<div class="mbe-library-groups">
+            <section class="mbe-library-group" aria-labelledby="mbe-books-heading">
+              <p class="mbe-library-heading" id="mbe-books-heading">Books of the Bible</p>
+              <div class="mbe-library-grid mbe-library-grid-books">${renderLibraryItems("book")}</div>
+            </section>
+            <section class="mbe-library-group" aria-labelledby="mbe-topics-heading">
+              <p class="mbe-library-heading" id="mbe-topics-heading">Topics</p>
+              <div class="mbe-library-grid mbe-library-grid-topics">${renderLibraryItems("topic")}</div>
+            </section>
+          </div>`;
 
   const headerMarkup = `
     <header class="mbe-global-shell" data-tool="${tool}" data-embedded="true" aria-label="My Bible Explorer ribbon">
@@ -157,8 +186,7 @@
           <details class="mbe-library-menu">
             <summary class="mbe-library-toggle">Library</summary>
             <div class="mbe-library-panel">
-              <div class="mbe-library-grid">${libraryMarkup}
-              </div>
+              ${libraryMarkup}
             </div>
           </details>
           <a class="mbe-ribbon-give" href="https://mybibleexplorer.com/#donate">Support</a>
