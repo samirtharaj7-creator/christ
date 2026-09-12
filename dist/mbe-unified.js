@@ -72,6 +72,13 @@
       tool: "hebrews",
     },
     {
+      name: "Find Your Way Home",
+      desc: "A thirteen-step journey through Steps to Christ",
+      href: "https://stc.mybibleexplorer.com/",
+      category: "topic",
+      tool: "steps-to-christ",
+    },
+    {
       name: "Hermeneutics",
       desc: "Learn to read Scripture faithfully",
       href: "https://hermeneutics.mybibleexplorer.com",
