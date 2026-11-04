@@ -30,6 +30,13 @@
 
   const libraryItems = [
     {
+      name: "1 & 2 Timothy",
+      desc: "Sound teaching, faithful leaders, and finishing the race",
+      href: "https://timothy.mybibleexplorer.com/",
+      category: "book",
+      tool: "timothy",
+    },
+    {
       name: "Colossians",
       desc: "The supremacy of Christ and life in Him",
       href: "https://colossians.mybibleexplorer.com/",
@@ -107,11 +114,25 @@
       tool: "james",
     },
     {
+      name: "Jude",
+      desc: "Contending for the faith and kept by God",
+      href: "https://jude.mybibleexplorer.com/",
+      category: "book",
+      tool: "jude",
+    },
+    {
       name: "Last Day Events",
       desc: "Earth's final chapter",
       href: "https://lastdayevents.mybibleexplorer.com/index.html",
       category: "topic",
       tool: "last-day-events",
+    },
+    {
+      name: "Letters of John",
+      desc: "Fellowship, love, truth, and assurance",
+      href: "https://johnletters.mybibleexplorer.com/",
+      category: "book",
+      tool: "johnletters",
     },
     {
       name: "Life of Christ",
@@ -126,6 +147,20 @@
       href: "https://parables.mybibleexplorer.com",
       category: "topic",
       tool: "parables",
+    },
+    {
+      name: "Peter",
+      desc: "Living hope, suffering, and the sure word of prophecy",
+      href: "https://peter.mybibleexplorer.com/",
+      category: "book",
+      tool: "peter",
+    },
+    {
+      name: "Philemon",
+      desc: "Love, appeal, and reconciliation in Christ",
+      href: "https://philemon.mybibleexplorer.com/",
+      category: "book",
+      tool: "philemon",
     },
     {
       name: "Philippians",
@@ -168,6 +203,20 @@
       href: "https://sanctuary.mybibleexplorer.com/#structure",
       category: "topic",
       tool: "sanctuary",
+    },
+    {
+      name: "Thessalonians",
+      desc: "Hope, holiness, and the Lord's return",
+      href: "https://thessalonians.mybibleexplorer.com/",
+      category: "book",
+      tool: "thessalonians",
+    },
+    {
+      name: "Titus",
+      desc: "Grace that teaches and good works that adorn the gospel",
+      href: "https://titus.mybibleexplorer.com/",
+      category: "book",
+      tool: "titus",
     },
   ];
 
