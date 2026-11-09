@@ -72,6 +72,13 @@
       tool: "galatians",
     },
     {
+      name: "Genesis",
+      desc: "Creation, the fall, the flood, and the promise to Abraham",
+      href: "https://genesis.mybibleexplorer.com/",
+      category: "book",
+      tool: "genesis",
+    },
+    {
       name: "Hebrews",
       desc: "Christ, covenant, sanctuary, and persevering faith",
       href: "https://hebrews.mybibleexplorer.com/",
